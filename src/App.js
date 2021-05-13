@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const data = await fetch('http://jsonplaceholder.typicode.com/users/');
+    const data = await fetch('https://jsonplaceholder.typicode.com/users/');
     const users = await data.json();
     this.setState({ monsters: users });
   }
